@@ -28,10 +28,10 @@ class SuplierController extends Controller {
    public function store(Request $request)
    {
        $validated = $request->validate([
-           'id_suplier' => 'required|integer',
-           'nama_suplier' => 'required|string|max:255',
-           'alamat_suplier' => 'nullable|string',
-           'telp_suplier' => 'nullable|string|max:15',
+           'id_supplier' => 'required|integer',
+           'nama_supplier' => 'required|string|max:255',
+           'alamat_supplier' => 'nullable|string',
+           'telepon_supplier' => 'nullable|string|max:15',
        ]);
 
 
@@ -46,7 +46,6 @@ class SuplierController extends Controller {
    public function destroy(Supplier $suplier)
    {
        $suplier->delete();
-
 
        return redirect()->route('suplier.index')->with('success', 'Data Supplier berhasil dihapus.');
    }

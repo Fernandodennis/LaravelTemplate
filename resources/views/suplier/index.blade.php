@@ -1,10 +1,8 @@
 @extends('layouts.app')
 
-
 @section('content')
 <!-- component -->
 <div class="max-w-[720px] mx-auto py-32 sm:py-8 lg:py-16">
-
 
   <div class="w-full flex justify-between items-center mb-3 mt-1 pl-3">
       <div>
@@ -74,30 +72,29 @@
            <p class="text-sm text-slate-500">{{ $loop->iteration }}</p>
           </td>
           <td class="p-4 py-5">
-          <p class="text-sm text-slate-500">{{ $suplier->nama_suplier }}</p>
+          <p class="text-sm text-slate-500">{{ $suplier->nama_supplier }}</p>
           </td>
           <td class="p-4 py-5">
-          <p class="text-sm text-slate-500">{{ $suplier->alamat_suplier }}</p>
+          <p class="text-sm text-slate-500">{{ $suplier->alamat_supplier }}</p>
           </td>
           <td class="p-4 py-5">
-          <p class="text-sm text-slate-500">{{ $suplier->telp_suplier }}</p>
+          <p class="text-sm text-slate-500">{{ $suplier->telepon_supplier }}</p>
           </td>
           <td class="p-4 py-5">
-          <p class="text-sm text-slate-500"><a href="{{ route('suplier.edit', $suplier->id) }}" class="font-medium text-blue-600 hover:text-blue-800">Edit</a></p>
+          <a href="#" class="font-medium text-blue-600 hover:text-blue-800">Edit</a>
           </td>
           <td class="p-4 py-5">
-           <p class="text-sm text-slate-500">
-               <a href="{{ route('suplier.destroy', $suplier->id) }}"
-                   class="font-medium text-blue-600 hover:text-blue-800"
-                   onclick="event.preventDefault(); if(confirm('Are you sure you want to delete this supplier?')) { document.getElementById('delete-form-{{ $suplier->id }}').submit(); }">
-                    Hapus
-                </a>
-                <form id="delete-form-{{ $suplier->id }}" action="{{ route('suplier.destroy', $suplier->id) }}" method="POST" style="display: none;">
-                   @csrf
-                   @method('DELETE')
-               </form>
-           </p>
-           </td>
+    <a href="{{ route('suplier.destroy', $suplier->id) }}"
+       class="font-medium text-blue-600 hover:text-blue-800"
+       onclick="event.preventDefault(); if(confirm('Are you sure you want to delete this supplier?')) { document.getElementById('delete-form-{{ $suplier->id }}').submit(); }">
+        Hapus
+    </a>
+    <form id="delete-form-{{ $suplier->id }}" action="{{ route('suplier.destroy', $suplier->id) }}" method="POST" style="display: none;">
+        @csrf
+        @method('DELETE')
+    </form>
+</td>
+
       </tr>
       @endforeach
        </tbody>
