@@ -69,9 +69,9 @@ class SuplierController extends Controller {
    {
        // Validasi data request jika diperlukan
        $validatedData = $request->validate([
-           'nama_suplier' => 'required|string|max:255',
-           'alamat_suplier' => 'nullable|string',
-           'telp_suplier' => 'nullable|string|max:15',
+           'nama_supplier' => 'required|string|max:255',
+           'alamat_supplier' => 'nullable|string',
+           'telepon_supplier' => 'nullable|string|max:15',
        ]);
 
 

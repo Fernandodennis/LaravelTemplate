@@ -28,33 +28,33 @@
 
 
        <div class="mt-10 col-span-full gap-y-8">
-         <label for="id_suplier" class="block text-sm/6 font-medium text-gray-900">ID Supplier</label>
+         <label for="id_supplier" class="block text-sm/6 font-medium text-gray-900">ID Supplier</label>
          <div class="mt-2">
-           <input id="id_suplier" name="id_suplier" type="text" value="{{ old('id_suplier', $suplier->id_suplier) }}" class="block w-full rounded-md border-0 py-1.5 pl-3 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm/6" readonly>
+           <input id="id_supplier" name="id_supplier" type="text" value="{{ old('id_supplier', $suplier->id_supplier) }}" class="block w-full rounded-md border-0 py-1.5 pl-3 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm/6" readonly>
          </div>
        </div>
 
 
        <div class="mt-5 col-span-full gap-y-8">
-         <label for="nama_suplier" class="block text-sm/6 font-medium text-gray-900">Name</label>
+         <label for="nama_supplier" class="block text-sm/6 font-medium text-gray-900">Name</label>
          <div class="mt-2">
-           <input id="nama_suplier" name="nama_suplier" type="text" value="{{ old('nama_suplier', $suplier->nama_suplier) }}" class="block w-full rounded-md border-0 py-1.5 pl-3 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm/6">
+           <input id="nama_supplier" name="nama_supplier" type="text" value="{{ old('nama_supplier', $suplier->nama_supplier) }}" class="block w-full rounded-md border-0 py-1.5 pl-3 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm/6">
          </div>
        </div>
 
 
        <div class="mt-5 col-span-full gap-y-8">
-         <label for="alamat_suplier" class="block text-sm/6 font-medium text-gray-900">Address</label>
+         <label for="alamat_supplier" class="block text-sm/6 font-medium text-gray-900">Address</label>
          <div class="mt-2">
-           <textarea id="alamat_suplier" name="alamat_suplier" rows="3" class="block w-full rounded-md border-0 py-1.5 pl-3 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm/6">{{ old('alamat_suplier', $suplier->alamat_suplier) }}</textarea>
+           <textarea id="alamat_supplier" name="alamat_supplier" rows="3" class="block w-full rounded-md border-0 py-1.5 pl-3 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm/6">{{ old('alamat_supplier', $suplier->alamat_supplier) }}</textarea>
          </div>
        </div>
 
 
        <div class="mt-5 col-span-full gap-y-8">
-         <label for="telp_suplier" class="block text-sm/6 font-medium text-gray-900">Phone Number</label>
+         <label for="telepon_supplier" class="block text-sm/6 font-medium text-gray-900">Phone Number</label>
          <div class="mt-2">
-           <input id="telp_suplier" name="telp_suplier" type="text" value="{{ old('telp_suplier', $suplier->telp_suplier) }}" class="block w-full rounded-md border-0 py-1.5 pl-3 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm/6">
+           <input id="telepon_supplier" name="telepon_supplier" type="text" value="{{ old('telepon_supplier', $suplier->telepon_supplier) }}" class="block w-full rounded-md border-0 py-1.5 pl-3 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm/6">
          </div>
        </div>
      </div>

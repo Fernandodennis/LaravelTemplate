@@ -81,7 +81,7 @@
           <p class="text-sm text-slate-500">{{ $suplier->telepon_supplier }}</p>
           </td>
           <td class="p-4 py-5">
-          <a href="#" class="font-medium text-blue-600 hover:text-blue-800">Edit</a>
+          <p class="text-sm text-slate-500"><a href="{{ route('suplier.edit', $suplier->id) }}" class="font-medium text-blue-600 hover:text-blue-800">Edit</a></p>
           </td>
           <td class="p-4 py-5">
     <a href="{{ route('suplier.destroy', $suplier->id) }}"
