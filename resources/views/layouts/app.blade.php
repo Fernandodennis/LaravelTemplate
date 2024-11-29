@@ -27,7 +27,7 @@
              </button>
            </div>
            <div class="hidden lg:flex lg:gap-x-12">
-             <a href="#" class="text-sm/6 font-semibold text-gray-900">User</a>
+             <a href="{{ route('user.index') }}" class="text-sm/6 font-semibold text-gray-900">User</a>
              <a href="{{ route('suplier.index') }}" class="text-sm/6 font-semibold text-gray-900">Suplier</a>
              <a href="#" class="text-sm/6 font-semibold text-gray-900">Stok</a>
              <a href="#" class="text-sm/6 font-semibold text-gray-900">Barang Masuk</a>
@@ -58,7 +58,7 @@
              <div class="mt-6 flow-root">
                <div class="-my-6 divide-y divide-gray-500/10">
                  <div class="space-y-2 py-6">
-                   <a href="#" class="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-gray-900 hover:bg-gray-50">User</a>
+                   <a href="{{ route('user.index') }}" class="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-gray-900 hover:bg-gray-50">User</a>
                    <a href="{{ route('suplier.index') }}" class="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-gray-900 hover:bg-gray-50">Suplier</a>
                    <a href="#" class="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-gray-900 hover:bg-gray-50">Stok</a>
                    <a href="#" class="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-gray-900 hover:bg-gray-50">Barang Masuk</a>

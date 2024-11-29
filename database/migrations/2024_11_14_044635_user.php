@@ -1,4 +1,4 @@
-<?php
+ <?php
 
 use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
@@ -16,8 +16,8 @@ return new class extends Migration
             $table->integer('id_user');
             $table->string('nama');
             $table->string('username');
-            $table->integer('password');
-            $table->integer('level');
+            $table->string('password');
+            $table->string('level');
             $table->timestamps();
         });
     }
